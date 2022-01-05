@@ -2,6 +2,8 @@ import React from "react";
 import ProductCard1 from "../ProductCard/ProductCard"
 import ProductCard2 from "../ProductCard/ProductCard1"
 import "./Home.css";
+import
+import {Link} from "react-router-dom";
 
 const Home = () => {
   return(
@@ -9,7 +11,7 @@ const Home = () => {
      
       <main><h1>TOP PICKS</h1>
       <div id ="displayCard"> 
-      <ProductCard1/>
+      <Link to="/product-page"><ProductCard1/></Link>
       <ProductCard1/>
       <ProductCard1/>
       <ProductCard1/>
