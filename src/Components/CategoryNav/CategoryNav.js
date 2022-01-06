@@ -1,21 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default class CategoryNav extends Component{
-// List of all available Product categories
+  function CategoryNav(){
+// List of Top Listed Product categories always viewed
+    let navigate = useNavigate();
+      return(
+        <div>
+          <div id="boxGroup">
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">PreOrders</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Transformers</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">New Arrivals</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Pokemon</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Marvel</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Star Wars</p></button>
+            <button id="testerFont" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Power Rangers</p></button>
+          </div>      
+        </div>
+      )
+    }
 
-  render(){
-    return(
-      <div>
-        <div id="boxGroup">
-          <p id="stationaryBox">PreOrders</p>
-          <p id="stationaryBox">New Arrivals</p>
-          <p id="stationaryBox">Transformers</p>
-          <p id="stationaryBox">Pokemon</p>
-          <p id="stationaryBox">Marvel</p>
-          <p id="stationaryBox">Star Wars</p>
-          <p id="stationaryBox">Power Rangers</p>
-        </div>      
-      </div>
-    )
-  }
-}
+export default CategoryNav;
