@@ -1,36 +1,99 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ProductCard1 from "../ProductCard/ProductCard"
 import ProductCard2 from "../ProductCard/ProductCard1"
 import "./Home.css";
-import
-import {Link} from "react-router-dom";
 
-const Home = () => {
+
+function Home(){
+  let navigate = useNavigate();
   return(
     <div id="homelayout">
      
       <main><h1>TOP PICKS</h1>
-      <div id ="displayCard"> 
-      <Link to="/product-page"><ProductCard1/></Link>
-      <ProductCard1/>
-      <ProductCard1/>
-      <ProductCard1/>
-      </div>
-      <h1>FEATURED PRE-ORDERS</h1>
-      <div id ="displayCard"> 
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      <ProductCard2/>
-      </div>
+        <div id ="displayCard"> 
+        
+          <button id="displayButton" onClick={()=>{
+            navigate("/product-page");
+          }}><ProductCard1/></button>
+        
+          <button id="displayButton" onClick={()=>{
+            navigate("/product-page");
+          }}><ProductCard1/></button>
+
+          <button id="displayButton" onClick={()=>{
+            navigate("/product-page");
+          }}><ProductCard1/></button>
+
+          <button id="displayButton" onClick={()=>{
+            navigate("/product-page");
+          }}><ProductCard1/></button>
+        </div>
+
+        <h1>FEATURED PRE-ORDERS</h1>
+          <div id ="displayCard"> 
+
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button>
+            
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button> 
+
+            <button id="displayButton1" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard2/></button> 
+
+          </div>
       </main>
     </div>
   )
