@@ -9,25 +9,23 @@
   justify-content:space-around;
   flex-wrap: wrap;
   text-align: center;
-  
 }
 
 #testImages{
   width: 60%;
 }
 
-#cardSet{
+/* #cardSet{
   
 }
 
 #cardSet1{
   
-}
+} */
 
 #cardText{
   text-align: center;
   font-size: 10px;
- 
 }
 
 #cardText1{
@@ -47,7 +45,3 @@
   width: 20%;
 }
 
-/* 
-#brandLogos{
-
-} */

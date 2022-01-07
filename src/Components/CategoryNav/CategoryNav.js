@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
             <button id="categoryNav" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Marvel</p></button>
             <button id="categoryNav" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Star Wars</p></button>
             <button id="categoryNav" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Power Rangers</p></button>
+            <button id="categoryNav" onClick={()=>{navigate("/category-page");}}><p id="stationaryBox">Comic Books</p></button>
           </div>      
         </div>
       )

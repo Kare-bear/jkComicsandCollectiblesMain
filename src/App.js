@@ -23,6 +23,9 @@ class App extends Component{
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>
             </div>
+            <div id ="returnFoot">
+              This is where we will place the Return Policy!! 
+            </div>
           </Router>
   }
 }
