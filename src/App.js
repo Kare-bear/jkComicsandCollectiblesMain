@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import CategoryHeader from "./Components/CategoryNav/CategoryNav";
 import ProductPage from './Components/ProductPage/ProductPage';
 import CategoryPage from './Components/CategoryPage/CategoryPage';
+import UserPage from "./Components/UserPage/UserPage";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 import "./App.css";
@@ -20,6 +21,7 @@ class App extends Component{
               <Route path="/" element={<Home/>}/>
               <Route path="product-page" element={<ProductPage/>}/>
               <Route path="category-page" element={<CategoryPage/>}/>
+              <Route path="user-account" element={<UserPage/>}/>
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>
             </div>
