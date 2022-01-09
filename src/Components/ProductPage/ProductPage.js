@@ -10,6 +10,9 @@ function ProductPage(){
       <div id="homelayout">
         <div id="cardText1"><h2>Transformers Kingdom WFC-K32 Autobot Pipes</h2></div>
         <img src={TestImage} id="productMainImages" alt="placeholderTESTIMAGE"/>
+        <div>
+          
+        </div>
 
         {/* 
         main image
