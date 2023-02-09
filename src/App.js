@@ -11,6 +11,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import LoginTopper from "./Components/Login/LoginTopper";
 import LoginPage from "./Components/Login/LoginPage";
 import AccountCreate from "./Components/Login/AccountCreate";
+import ReturnPolicy from "./Components/ReturnFooter/ReturnPolicy";
 
 import "./App.css";
 class App extends Component{
@@ -30,9 +31,8 @@ class App extends Component{
               <Route path="account-create" element={<AccountCreate/>}/>
               <Route path="*" element={<ErrorPage/>}/>
             </Routes>
-            </div>
-            <div id ="returnFoot">
-              This is where we will place the Return Policy!! 
+
+              <ReturnPolicy/> 
             </div>
           </Router>
   }
