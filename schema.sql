@@ -8,3 +8,15 @@ PricePaid int,
 ProductImageURL varchar(200)
 );
 
+
+create table users(
+	UserID int,
+	DateCreated varchar,
+	FirstName varchar,
+	LastName varchar,
+	EmailAddress varchar,
+	UserName varchar,
+	Passkey varchar,
+	ShippingAddress varchar,
+	BillingAddress varchar
+);
