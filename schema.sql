@@ -1,11 +1,14 @@
-create table inventoryDetails(
-ProductIndex int,
-ProductName varchar(200),
-ProductNotes varchar(200),
-TFClass varchar(200),
-TFSubline varchar(200),
-PricePaid int,
-ProductImageURL varchar(200)
+create table inventorydetails(
+product_id int,
+brand varchar(200),
+line varchar(200),
+item_name varchar(200),
+item_type varchar(200),
+item_sku int,
+notes varchar(200),
+sale_price money,
+image_url_1 varchar(500),
+image_url_2 varchar(500)
 );
 
 

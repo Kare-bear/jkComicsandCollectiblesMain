@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ProductCard1 from "../ProductCard/ProductCard"
-import ProductCard2 from "../ProductCard/ProductCard1"
+import { PRODUCTS } from "../../Products"; 
+import {ProductCard} from "../productCard/productCard"
+
 import "./Home.css";
 
 
@@ -11,29 +12,35 @@ function Home(){
     <div id="homelayout">
      
       <main><h1>TOP PICKS</h1>
-        <div id ="displayCard"> 
+        <div id ="displayCard">
+          
+          {PRODUCTS.map((productCard) =>(
+            <button id="displayButton" onClick={()=>{
+              navigate("/product-page");
+            }}><ProductCard data={productCard}/></button>
+          ))} 
+        
+          {/* <button id="displayButton" onClick={()=>{
+            navigate("/product-page");
+          }}><ProductCard2/></button>
         
           <button id="displayButton" onClick={()=>{
             navigate("/product-page");
-          }}><ProductCard1/></button>
-        
-          <button id="displayButton" onClick={()=>{
-            navigate("/product-page");
-          }}><ProductCard1/></button>
+          }}><ProductCard2/></button>
 
           <button id="displayButton" onClick={()=>{
             navigate("/product-page");
-          }}><ProductCard1/></button>
+          }}><ProductCard2/></button>
 
           <button id="displayButton" onClick={()=>{
             navigate("/product-page");
-          }}><ProductCard1/></button>
+          }}><ProductCard2/></button> */}
         </div>
 
         <h1>FEATURED PRE-ORDERS</h1>
           <div id ="displayCard"> 
 
-            <button id="displayButton1" onClick={()=>{
+            {/* <button id="displayButton1" onClick={()=>{
               navigate("/product-page");
             }}><ProductCard2/></button>
 
@@ -91,7 +98,7 @@ function Home(){
 
             <button id="displayButton1" onClick={()=>{
               navigate("/product-page");
-            }}><ProductCard2/></button> 
+            }}><ProductCard2/></button>  */}
 
           </div>
       </main>

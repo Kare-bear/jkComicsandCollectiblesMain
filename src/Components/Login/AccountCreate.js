@@ -19,6 +19,14 @@ let navigate = useNavigate();
             <input type="text" name="email address" />
           </label>
           <label>
+          Password
+            <input type="password" name="password" />
+          </label>
+          <label>
+          Re-Enter Password
+            <input type="password" name="password" />
+          </label>
+          <label>
           Shipping Address
             <input type="text" name="email address" />
           </label>

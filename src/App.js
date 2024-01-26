@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import siteLogo from "./Components/Logos/jkComColLOGO.webp"
+import siteLogo from "./Components/Logos/empressiveLogo.jpeg"
 import Home from './Components/Home/Home';
 import CategoryHeader from "./Components/CategoryNav/CategoryNav";
 import ProductPage from './Components/ProductPage/ProductPage';
@@ -15,6 +15,7 @@ import ReturnPolicy from "./Components/ReturnFooter/ReturnPolicy";
 
 import "./App.css";
 import axios from "axios";
+
 class App extends Component{
   constructor(props) {
     super(props);

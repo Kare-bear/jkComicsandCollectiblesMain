@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import TestImage1 from "../Logos/slammer1.jpeg";
+import React from "react";
 
-export default class ProductCard extends Component{
-  //Card should contain Image of products, name of product, price and should be clickable to link to Product Page
 
-  render(){
+export const ProductCard = (props) => {
+  const {product_id, brand, line, item_name, item_type, item_sku, notes, sale_price, image_url_1, image_url_2 } = props.data;
     return(
       <div id="cardSet">
         <div>
-          <img src={TestImage1} id="testImages" alt="placeholderTESTIMAGE"/>
+          <img src={image_url_1} id="testImages" alt="placeholderTESTIMAGE"/>
         </div>
-        <div id="cardText"><h2>Transformers Kingdom WFC-K33 Autobot Slammer</h2></div>
+        <div id="cardText">
+          <h2>{brand} {line} {item_name}</h2>
+          <h1>{sale_price}</h1>
+          </div>
       </div>
     )
   }
-}
